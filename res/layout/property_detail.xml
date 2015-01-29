@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/propertyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="@string/defaultString"
+        android:textSize="15sp" 
+        android:layout_alignParentRight="true"
+        />
+    
+    <TextView
+        android:id="@+id/propertyKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="left"
+        android:text="@string/defaultString"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@id/propertyValue" />
+    
+    <ImageButton
+        android:id="@+id/fbShareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/fbshare"
+        android:src="@drawable/sharefb"
+        android:visibility="gone" 
+        android:cropToPadding="true"
+        android:background="#0000"
+        android:layout_alignParentRight="true"
+        />
+	
+	
+    <ImageView
+        android:id="@+id/up_down"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:contentDescription="@string/up_down"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@id/propertyValue"
+         />	
+</RelativeLayout>

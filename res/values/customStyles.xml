@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+      	<item name="android:textSize">18sp</item>
+    </style>
+    <style name="errorFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textColor">#FF0000</item>
+      	<item name="android:textSize">18sp</item>
+      	<item name="android:textStyle">bold|italic</item>
+    </style>
+     <style name="errorFontServer" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:textColor">#FF3300</item>
+      	<item name="android:textSize">18sp</item>
+      	<item name="android:textStyle">bold|italic</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextSwitcher
+        android:id="@+id/switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/completeAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ImageSwitcher>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/buttonPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/prevoius" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingLeft="15dp"
+            android:text="@string/next" />
+    </TableRow>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/zillowCopyrightFirstLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/zillowCopyrightFirstLine"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/zillowCopyrightSecondLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/zillowCopyrightFirstLine"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/zillowCopyrightSecondLine"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/zillowCopyrightThirdLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zillowCopyrightSecondLine"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text="@string/zillowCopyrightThirdLine"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
